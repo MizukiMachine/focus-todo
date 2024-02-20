@@ -1,0 +1,13 @@
+{
+  "name": "focus-todo",
+  "version": "1.0.0",
+  "description": "TypeScript、Express.js、MySQLを使用した、集中管理のためのTODOアプリケーション",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
