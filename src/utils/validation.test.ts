@@ -1,7 +1,9 @@
+import { isValidEmail } from './validation'
+
 describe('isValidEmail', () => {
   test('正しいメールアドレスを検証できる', () => {
     expect(isValidEmail('test@example.com')).toBe(true);
-    expect(isValidEmail('user@name@domain.co.jp')).toBe(true);
+    expect(isValidEmail('user.name@domain.co.jp')).toBe(true);
   });
 
   test('不正なメールアドレスを検出できる', () => {
