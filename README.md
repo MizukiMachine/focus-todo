@@ -62,6 +62,39 @@ src/
 └── app.ts         # アプリケーションのエントリーポイント
 ```
 
+## 開発フロー
+
+Git Flowを採用
+
+- main: プロダクションリリース用
+- develop: 開発用メインブランチ
+- feature/*: 新機能開発用
+- bugfix/*: バグ修正用
+- release/*: リリース準備用
+- hotfix/*: 緊急バグ修正用
+
+### ブランチの運用ルール
+
+1. 新機能の開発
+   ```bash
+   git checkout develop
+   git checkout -b feature/機能名
+   # 開発完了後
+   git push origin feature/機能名
+   # プルリクエスト作成
+   ```
+
+2. バグ修正
+   ```bash
+   git checkout develop
+   git checkout -b bugfix/問題の内容
+   ```
+
+3. リリース作業
+   ```bash
+   git checkout develop
+   git checkout -b release/バージョン番号
+
 ## 利用可能なコマンド
 
 ※随時追加予定
